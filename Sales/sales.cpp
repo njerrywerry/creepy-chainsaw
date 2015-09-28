@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 int main() {
-int den, quantity;
-int stock1, stock2, stock3, stock4, stock5, stock6;
+int quantity1, quantity2, quantity3, quantity4, quantity5, quantity6;
+int stock, stock1, stock2, stock3, stock4, stock5, stock6;
 
-cout<<"Please input stock values for:"<<endl;
+cout<<"Please input stock values for each shop:"<<endl;
 cout<<"Kshs. 10:"<<endl;
 cin>>stock1;
 cout<<"Kshs. 20:"<<endl;
@@ -18,58 +18,44 @@ cin>>stock5;
 cout<<"Kshs. 500:"<<endl;
 cin>>stock6;
 
-cout<<"Please input credit card denomination you wish to purchase:"<<endl;
-cin>>den;
-cout<<"Please input quantity:"<<endl;
-cin>>quantity;
+stock = (stock1 + stock2 + stock3 + stock4 + stock5 + stock6) * 5;
 
-switch (den)
-{
-case 10:
-if (stock1 < quantity)
-cout<<"Sorry,"<<" "<<den<<" "<<"is less than what you require"<<endl;
-else
-stock1 = stock1 - quantity;
-cout<<"Stock of Ksh. 10 is now:"<<stock1<<endl;
-break;
-case 20:
-if (stock2 < quantity)
-cout<<"Sorry,"<<" "<<den<<" "<<"is less than what you require"<<endl;
-else
-stock2 = stock2 - quantity;
-cout<<"Stock of Ksh. 20 is now:"<<stock2<<endl;
-break;
-case 50:
-if (stock3 < quantity)
-cout<<"Sorry,"<<" "<<den<<" "<<"is less than what you require"<<endl;
-else
-stock3 = stock3 - quantity;
-cout<<"Stock of Ksh. 50 is now:"<<stock3<<endl;
-break;
-case 100:
-if (stock4 < quantity)
-cout<<"Sorry,"<<" "<<den<<" "<<"is less than what you require"<<endl;
-else
-stock4 = stock4 - quantity;
-cout<<"Stock of Ksh. 100 is now:"<<stock4<<endl;
-break;
-case 250:
-if (stock5 < quantity)
-cout<<"Sorry,"<<" "<<den<<" "<<"is less than what you require"<<endl;
-else
-stock5 = stock5 - quantity;
-cout<<"Stock of Ksh. 250 is now:"<<stock5<<endl;
-break;
-case 500:
-if (stock6 < quantity)
-cout<<"Sorry,"<<" "<<den<<" "<<"is less than what you require"<<endl;
-else
-stock6 = stock6 - quantity;
-cout<<"Stock of Ksh. 500 is now:"<<stock6<<endl;
-break;
-default:
-cout<<"Invalid stock"<<endl;
-}
+cout<<"The total stock for all products is:"<<stock<<endl;
+
+cout<<"============================================="<<endl;
+
+cout<<"Please input quantity purchased for each shop for:"<<endl;
+cout<<"Kshs. 10:"<<endl;
+cin>>quantity1;
+quantity1 = quantity1 * 5;
+stock = (stock - quantity1);
+
+cout<<"Kshs. 20:"<<endl;
+cin>>quantity2;
+quantity2 = quantity2 * 5;
+stock = (stock - quantity2);
+
+cout<<"Kshs. 50:"<<endl;
+cin>>quantity3;
+quantity3 = quantity3 * 5;
+stock = (stock - quantity3);
+
+cout<<"Kshs. 100:"<<endl;
+cin>>quantity4;
+quantity4 = quantity4 * 5;
+stock = (stock - quantity4);
+
+cout<<"Kshs. 250:"<<endl;
+cin>>quantity5;
+quantity5 = quantity5 * 5;
+stock = (stock - quantity5);
+
+cout<<"Kshs. 500:"<<endl;
+cin>>quantity6;
+quantity6 = quantity6 * 5;
+stock = (stock - quantity6);
+
+cout<<"Total remaining stock across all stores is:"<<stock<<endl;
 
 return 0;
 }

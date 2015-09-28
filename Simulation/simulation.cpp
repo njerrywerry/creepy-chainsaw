@@ -4,7 +4,6 @@ int main ()
 {
 string fname, sname, reg_no, gender;
 int SMA2100, SMA2104, STA2100, ICS2607, ICS2104, average;
-
 cout<<"Please enter student name:"<<endl;
 cin>>fname>>sname;
 cout<<"Please enter registration number:"<<endl;
