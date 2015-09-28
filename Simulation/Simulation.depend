@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1443386990 source:/home/njerry/workspace/codeblocks/Simulation/simulation.cpp
+	<iostream>
+
+1443390200 source:/home/njerry/workspace/codeblocks/Simulation/sales.cpp
+	<iostream>
+
